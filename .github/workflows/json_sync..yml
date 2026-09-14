@@ -1,12 +1,12 @@
-
 name: Update xiaosa.json
 
 on:
   push:
     branches: [master]
   schedule:
-    - cron: '0 18 * * *'
-  workflow_dispatch:
+    # 每月 5 号 UTC 02:00
+    - cron: '0 2 5 * *'
+  workflow_dispatch:   # 支持手动触发
 
 permissions:
   contents: write
@@ -14,6 +14,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
