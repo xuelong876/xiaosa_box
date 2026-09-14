@@ -1,0 +1,42 @@
+
+name: Update xiaosa.json
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run generator script
+        run: python py/build_xiaosa.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add xiaosa.json
+          if git diff --cached --quiet; then
+            echo "No changes, skip commit."
+          else
+            git commit -m "chore: auto-update xiaosa.json [skip ci]"
+            git push
+          fi
