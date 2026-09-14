@@ -9,7 +9,9 @@
 
 #### 使用说明
 
-1. https://gitee.com/xuelong88/xiaosa_box/raw/master/xiaosa.json
+1.https://gh-proxy.com/https://raw.githubusercontent.com/xuelong876/xiaosa_box/refs/heads/master/xiaosa.json
+
+
 
    
 
