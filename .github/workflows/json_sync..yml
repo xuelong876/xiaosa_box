@@ -28,7 +28,7 @@ jobs:
         run: pip install requests
 
       - name: Run generator script
-        run: python py/build_xiaosa.py
+        run: python json_sync.py
 
       - name: Commit and push if changed
         run: |
