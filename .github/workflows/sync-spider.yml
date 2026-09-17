@@ -13,8 +13,13 @@ jobs:
     steps:
       # 1. 克隆 Gitee 仓库（目标仓库）
       - name: Checkout Gitee repo
+        env:
+            GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
-          git clone https://${secrets.GITEE_TOKEN}@gitee.com/xuelong88/xiaosa_box.git repo
+          git config --global credential.helper store
+          echo "https://${GITEE_TOKEN}@gitee.com" > ~/.git-credentials
+          git clone https://gitee.com/xuelong88/xiaosa_box.git repo
+     
 
           cd repo
           git config user.name "GitHub Action Sync"
