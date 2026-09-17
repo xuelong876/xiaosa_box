@@ -4,8 +4,8 @@ on:
   push:
     branches: [master]
   schedule:
-    # 每月 5 号 UTC 02:00
-    - cron: '0 2 5 * *'
+      # cron 格式：`分 时 日 月 星期`
+    - cron: '0 2 * * 2'
   workflow_dispatch:   # 支持手动触发
 
 permissions:
