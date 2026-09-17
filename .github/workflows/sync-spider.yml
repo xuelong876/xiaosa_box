@@ -17,7 +17,7 @@ jobs:
          
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
-          git clone https://${GITEE_TOKEN}@gitee.com/xuelong88/xiaosa_box.git repo
+          git clone https://4573b5c4329000437d39c93ae0276b16@gitee.com/xuelong88/xiaosa_box.git repo
      
 
           cd repo
