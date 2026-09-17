@@ -14,7 +14,7 @@ jobs:
       # 1. 克隆 Gitee 仓库（目标仓库）
       - name: Checkout Gitee repo
         run: |
-          git clone https://${{ secrets.GITEE_TOKEN }}@gitee.com/xuelong88/xiaosa_box.git repo
+          git clone https://${ secrets.GITEE_TOKEN }@gitee.com/xuelong88/xiaosa_box.git repo
 
           cd repo
           git config user.name "GitHub Action Sync"
