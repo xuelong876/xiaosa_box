@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Gitee repo
         env:
    
-          GITEE_USER: ${{ secrets.GITEE_USER }}
+          GITEE_USER: 471391015@qq.com
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
           # 配置git凭证，当前shell生效
