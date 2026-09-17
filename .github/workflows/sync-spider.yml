@@ -3,8 +3,8 @@ name: Sync spider.jar to Gitee
 on:
   schedule:
     # UTC 时间，每月 5 日 01:00（北京时间 5 日 09:00）
-    # 如果要北京时间凌晨 1 点，改成: '0 17 4 * *'
-    - cron: '0 1 5 * *'
+    # cron 格式：`分 时 日 月 星期`
+    - cron: '0 1 * * 2'
   workflow_dispatch:  # 支持手动触发
 
 jobs:
