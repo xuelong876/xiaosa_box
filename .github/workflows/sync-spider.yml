@@ -60,7 +60,7 @@ jobs:
           if [ "$old_hash" != "$new_hash" ]; then
             mv new_spider.jar spider.jar
             git add spider.jar
-            git commit -m "auto update spider.jar $(date +%Y-%m-%d)"
+            git commit -m "githuv auto update spider $(date +%Y-%m-%d)"
             echo "changed=true" >> $GITHUB_OUTPUT
           else
             rm -f new_spider.jar
