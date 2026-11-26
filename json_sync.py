@@ -6,7 +6,7 @@ from typing import List, Dict
 # 配置区
 CONFIG = {
     "xiaosa_json_url": "https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json",
-    "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
+    "wallpaper": "https://raw.giteeusercontent.com/xuelong88/mybox_PG/raw/main/wallpaper_g1.png",
     "logo": "https://raw.giteeusercontent.com/xuelong88/xiaosa_box/raw/master/pg.gif",
     "spider": "https://gitee.com/xuelong88/xiaosa_box/raw/master/spider.jar",
     # 关键修改：默认输出到仓库根目录的 xiaosa.json
