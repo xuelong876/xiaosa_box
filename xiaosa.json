@@ -1,6 +1,6 @@
 {
   "spider": "https://gitee.com/xuelong88/xiaosa_box/raw/master/spider.jar",
-  "wallpaper": "https://raw.giteeusercontent.com/xuelong88/mybox_PG/raw/main/wallpaper_g1.png",
+  "wallpaper": "https://raw.giteeusercontent.com/xuelong88/mybox_PG/raw/main/wallpaper_g1.webp",
   "logo": "https://raw.giteeusercontent.com/xuelong88/xiaosa_box/raw/master/pg.gif",
   "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
   "sites": [
